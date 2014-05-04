@@ -1,0 +1,140 @@
+<!--
+
+ Danish Shaikh
+ 
+ An HTML5 page with some mobile-specific features.
+
+-->
+<html>
+    <head>
+        <title>Danish HTML5 Fun</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" /> 
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        
+        <meta name="viewport" content="width=device-width" />
+
+        <!-- 
+            IE versions older than 9 don't recognize the new HTML5 elements.
+            See: http://remysharp.com/2009/01/07/html5-enabling-script/
+        -->
+        <!--[if lt IE 9]> <script> 
+        var e = ("article,footer,header,hgroup,nav,section,time").split(','); 
+        for (var i = 0; i < e.length; i++) { 
+            document.createElement(e[i]);
+        }
+        </script> <![endif]-->
+
+        <style type="text/css"><!--
+        
+        /* 
+            html5 fix for old browsers to display those items as blocks.
+            see: http://html5doctor.com/html-5-reset-stylesheet/ 
+        */
+        article,aside,details,figcaption,figure, footer,header,hgroup,menu,nav,section {  display:block; }
+        
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: #FFCC00;
+            font: 12px sans-serif;
+        }
+        
+        header {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            border-bottom: 1px solid black;
+        }
+        
+        h2 {
+            font: 13px sans-serif;
+        }
+
+        
+        nav ul {
+            margin: 1em;
+            padding: 0;
+        }
+        
+        nav li {
+            display: inline;
+            margin: 0;
+            padding: 1em;
+        }
+        
+        article {
+            border: 1px solid black;
+            width: 75%;
+            padding: 1em;
+            margin: 10px auto;
+            background-color: white;
+        }
+        
+        article header {
+            text-align: left;
+            border-bottom: none;
+        }
+        
+        article h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        footer {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            border-top: 1px solid black;
+        }
+        
+        --></style>
+    </head>
+
+    <body>
+
+    <header>
+        <hgroup>
+            <h1>HTML 5 Fun </h1>
+            <h2>Page in HTML5 with some interesting features for mobile.Try it from your cell Phone </h2>
+        </hgroup> </header>
+
+    <article>
+        <p>
+        To initiate a phone call:
+        <a href="tel:15306804102">Give us a call!</a>
+        </p>
+        
+        <p>
+        To initiate an SMS:
+        <a href="sms:919890583796">Send us a text!</a><br />
+        Though you can also send to multiple recipients:
+        <a href="sms:919890583796">Send all of us a txt!</a>
+        </p>
+        
+        <p>
+        Standard input type (for comparison to the below):
+        <input type="text" />
+        </p>
+        
+        <p>
+        Email input type:
+        <input type="email" autocorrect="off" autocomplete="off" autocapitalize="off" />
+    </p>
+    
+        <p>
+        URL input type :
+          <input type="url" autocorrect="off" autocomplete="off" autocapitalize="off" />
+    </p>
+    
+        <p>&nbsp;
+        </p>
+        
+    </article>    <footer>
+        <p>&nbsp;</p>
+    </footer>
+    </body>
+</html>
